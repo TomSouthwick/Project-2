@@ -1,7 +1,8 @@
 const Client = require('./Client');
+const Friendship = require('./Friendship');
 
 
 
 
 
-module.exports = {Client};
+module.exports = { Client ,Friendship };
