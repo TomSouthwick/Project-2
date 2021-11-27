@@ -25,12 +25,15 @@ Friendship.init(
             key: 'id',
         },
     },
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'friendship',
-  }
+  },
+    {
+        
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'friendship',
+    }
 );
 
 module.exports = Friendship;
