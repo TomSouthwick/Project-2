@@ -45,17 +45,11 @@ User.init(
     cover_picture: {
       type: DataTypes.STRING,
     },
-    followers: {
-      type: DataTypes.ARRAY,
-    },
-    following: {
-      type: DataTypes.ARRAY,
-    },
     is_admin: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
     },
-    comment: {
+    description: {
       type: DataTypes.STRING,
       allowNull: false,
     },

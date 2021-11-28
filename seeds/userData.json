@@ -1,0 +1,12 @@
+[
+    {
+      "first_name": "Mark",
+      "last_name": "Zuck",
+      "email": "zuck@facebook.com",
+      "password": "password12345",
+      "profile_picture":null,
+      "cover_picture":null,
+      "is_admin":true,
+      "description":"I am the admin"
+    }
+]
