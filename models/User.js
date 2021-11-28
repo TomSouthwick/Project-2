@@ -2,13 +2,13 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Client extends Model {
+class User extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-Client.init(
+User.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -39,6 +39,26 @@ Client.init(
         len: [6],
       },
     },
+    profile_picture: {
+      type: DataTypes.STRING,
+    },
+    cover_picture: {
+      type: DataTypes.STRING,
+    },
+    followers: {
+      type: DataTypes.ARRAY,
+    },
+    following: {
+      type: DataTypes.ARRAY,
+    },
+    is_admin: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    },
+    comment: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     hooks: {
@@ -51,8 +71,8 @@ Client.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'client',
+    modelName: 'user',
   }
 );
 
-module.exports = Client;
+module.exports = User;
