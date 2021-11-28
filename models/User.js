@@ -46,16 +46,16 @@ User.init(
       type: DataTypes.STRING,
     },
     followers: {
-      type: DataTypes.ARRAY,
+      type: DataTypes.INTEGER,
     },
     following: {
-      type: DataTypes.ARRAY,
+      type: DataTypes.INTEGER,
     },
     is_admin: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
     },
-    comment: {
+    description: {
       type: DataTypes.STRING,
       allowNull: false,
     },
