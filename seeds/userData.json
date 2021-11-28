@@ -6,8 +6,6 @@
       "password": "password12345",
       "profile_picture":null,
       "cover_picture":null,
-      "folllowers":null,
-      "following":null,
       "is_admin":true,
       "description":"I am the admin"
     }

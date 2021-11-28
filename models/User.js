@@ -45,12 +45,6 @@ User.init(
     cover_picture: {
       type: DataTypes.STRING,
     },
-    followers: {
-      type: DataTypes.INTEGER,
-    },
-    following: {
-      type: DataTypes.INTEGER,
-    },
     is_admin: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
