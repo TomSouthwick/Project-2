@@ -209,7 +209,7 @@ iframe {
 }
 .back-ground-image {
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 
 .wrap-login100 {
