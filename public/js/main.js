@@ -1,6 +1,23 @@
 (function ($) {
   "use strict";
-
+  console.log("hello World");
+  const payLoad = [
+    {
+      imgUrl:
+        "https://www.howtogeek.com/wp-content/uploads/2021/01/windows_hello_hero_2.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1",
+    },
+    {
+      imgUrl:
+        "https://cdn.shopify.com/s/files/1/1190/4748/t/10/assets/logo.png?v=5439823434889869121",
+    },
+    {
+      imgUrl:
+        "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg",
+    },
+  ];
+  $("#content-container").append(
+    `<div><img src="${payLoad[0].imgUrl}"/></div>`
+  );
   /*==================================================================*/
   $("#sign-up-btn").on("click", function () {
     $("#sign-up-form").show();
