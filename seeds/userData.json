@@ -8,5 +8,25 @@
       "cover_picture":null,
       "is_admin":true,
       "description":"I am the admin"
+    },
+    {
+      "first_name": "Ben",
+      "last_name": "Ink",
+      "email": "ben@facebook.com",
+      "password": "password12345",
+      "profile_picture":null,
+      "cover_picture":null,
+      "is_admin":false,
+      "description":"I am the boss"
+    },
+    {
+      "first_name": "Bill",
+      "last_name": "Gates",
+      "email": "bill@facebook.com",
+      "password": "password12345",
+      "profile_picture":null,
+      "cover_picture":null,
+      "is_admin":false,
+      "description":"I need a job"
     }
 ]
