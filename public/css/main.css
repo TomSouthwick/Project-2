@@ -233,7 +233,9 @@ iframe {
 }
 .worlds-longest-wrapper {
   width: 100vw;
-  overflow: hidden;
+  position: absolute;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 .insert-awesome-bg {
   background-image: url(https://unsplash.com/assets/api/api-photo-grid@2x-3b92db4cdfc938c6dde2291ca1c78ab7ace98ef916a8dd08c00a6b006c0b631b.jpg);
