@@ -270,6 +270,7 @@ iframe {
   overflow: hidden;
   padding: 77px 55px 33px 55px;
   position: absolute;
+  min-height: 636px;
 
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
