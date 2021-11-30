@@ -1,7 +1,7 @@
 (function ($) {
   "use strict";
   console.log("hello World");
-  const payLoad = [
+  const payload = [
     {
       imgUrl:
         "https://www.howtogeek.com/wp-content/uploads/2021/01/windows_hello_hero_2.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1",
@@ -15,9 +15,13 @@
         "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg",
     },
   ];
-  $("#content-container").append(
-    `<div><img src="${payLoad[0].imgUrl}"/></div>`
-  );
+
+  payload.forEach((item) => {
+    $("#content-container").append(
+      `<div><img style="width:400px; height: 400px" src="${item.imgUrl}"/></div>`
+    );
+  });
+
   /*==================================================================*/
   $("#sign-up-btn").on("click", function () {
     $("#sign-up-form").show();
