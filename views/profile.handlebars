@@ -1,0 +1,19 @@
+   <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login101">
+          <form class="login100-form validate-form" id="log-in-form"></form>
+          <div class="topnav">
+            <a>Current User TBD{{?current.user.name?}}</a>
+            <input type="text" placeholder="Search...">
+            <a href="#profile">Newsfeed</a>
+            
+          </div>
+          <div class="content-div" id="content-container"> 
+            {{#each posts as |post|}}
+              <img style="width: 33%;" src="{{post.img_url}}" alt="">
+            {{/each}}
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
