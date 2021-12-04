@@ -1,14 +1,15 @@
-
+          <header class="p-4">
+            <div class="topnav">
+              <a>Goodbye Zuk</a>
+              <input type="text" placeholder="Search...">
+              <a href="profile">Profile</a>
+              
+            </div>
+          </header>
     <div class="limiter">
       <div class="container-login100">
         <div class="wrap-login101">
           <form class="login100-form validate-form" id="log-in-form"></form>
-          <div class="topnav">
-            <a>Goodbye Zuk</a>
-            <input type="text" placeholder="Search...">
-            <a href="#profile">Profile</a>
-            
-          </div>
           <div class="content-div" id="content-container"> 
             {{#each posts as |post|}}
               <h5 style="margin-top: 20px;">{{post.user.first_name}}</h5>
@@ -37,8 +38,8 @@
      <!--===============================================================================================-->
      <script src="/vendor/animsition/js/animsition.min.js"></script>
      <!--===============================================================================================-->
-     <script src="/vendor/bootstrap/js/popper.js"></script>
-     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+     {{!-- <script src="/vendor/bootstrap/js/popper.js"></script>
+     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script> --}}
      <!--===============================================================================================-->
      <script src="/vendor/select2/select2.min.js"></script>
      <!--===============================================================================================-->
