@@ -69,6 +69,21 @@ router.get("/profile", async (req, res) => {
   }
 });
 
+router.get('*', (req, res) => {
+try {
+  res.render("login", {
+    logged_in: req.session.logged_in,
+  });
+} catch (err) {
+<<<<<<< HEAD
+  res.status(500).json(err)};
+});
+
+=======
+  res.status(500).json(err);
+}
+  
+>>>>>>> 2a62a229195a1e2fa000536e5423e65834a719ee
 router.get("/create-post", async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -93,6 +108,7 @@ router.get("/create-post", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+
 });
 
 module.exports = router;
