@@ -5,7 +5,6 @@
 <script>
   // compile the template var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
   // execute the compiled template and print the output to the console
-  console.log(template({ doesWhat: "rocks!" }));
 </script>
 
 
@@ -28,7 +27,7 @@
               class="wrap-input100 validate-input"
               data-validate="Valid email is: a@b.c"
             >
-              <input class="input100" type="text" name="email" />
+              <input id="email-login" class="input100" type="text" name="email" />
               <span class="focus-input100" data-placeholder="Email"></span>
             </div>
 
@@ -39,14 +38,14 @@
               <span class="btn-show-pass">
                 <i class="zmdi zmdi-eye"></i>
               </span>
-              <input class="input100" type="password" name="pass" />
+              <input id="password-login" class="input100" type="password" name="pass" />
               <span class="focus-input100" data-placeholder="Password"></span>
             </div>
 
             <div class="container-login100-form-btn">
               <div class="wrap-login100-form-btn">
                 <div class="login100-form-bgbtn"></div>
-                <button class="login100-form-btn">Login</button>
+                <button id="loginBtn" class="login100-form-btn" >Login</button>
               </div>
             </div>
 
@@ -105,7 +104,7 @@
 
   
 
-    <!--===============================================================================================-->
+    {{!-- <!--===============================================================================================-->
     <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
     <script src="/vendor/animsition/js/animsition.min.js"></script>
@@ -119,6 +118,8 @@
     <script src="/vendor/daterangepicker/daterangepicker.js"></script>
     <!--===============================================================================================-->
     <script src="/vendor/countdowntime/countdowntime.js"></script>
-    <!--===============================================================================================-->
-    <script src="/js/main.js"></script>
+    <!--===============================================================================================--> --}}
+    {{!-- <script src="/vendor/jquery/jquery-3.2.1.min.js"></script> --}}
+    {{!-- <script src="/js/main.js"></script> --}}
+    <script src="./js/login.js"></script>
 
