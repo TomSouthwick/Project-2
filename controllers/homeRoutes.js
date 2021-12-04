@@ -69,4 +69,8 @@ router.get("/profile", async (req, res) => {
   }
 });
 
+router.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/pages/404.html'))
+);
+
 module.exports = router;
