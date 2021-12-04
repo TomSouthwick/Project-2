@@ -1,0 +1,32 @@
+[
+    {
+    "comment": "If you want to manage information effectively, then ORM is the way to go.",
+    "post_id": 3,
+    "user_id": 1
+    },
+    {
+    "comment": "Model-View-View-Controller is another structural paradigm for your code.",
+    "post_id": 1,
+    "user_id": 3
+    },
+    {
+    "comment": "I could spend days messing around with ORM. Yours truly, a Data Tragic",
+    "post_id": 3,
+    "user_id": 2
+    },
+    {
+    "comment": "You need to get clued up on SQL language to get the most out of ORM.",
+    "post_id": 3,
+    "user_id": 3
+    },
+    {
+    "comment": "Did not realise there was a 'difference between authentication and authorisation', thanks for sharing.",
+    "post_id": 2,
+    "user_id": 2
+    },
+    {
+    "comment": "You might want to look into hashing and salting to improve security of personal data.",
+    "post_id": 2,
+    "user_id": 3
+    }
+]

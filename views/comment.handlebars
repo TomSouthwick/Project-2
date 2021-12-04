@@ -1,0 +1,65 @@
+
+
+
+        <div class = "card card-rounded">
+            <div class="card-header display-flex justify-space-between align-center ">
+                <h4 class="p-2">{{ post.name }}</h4>
+                <div class="text-right pr-3" style="font-size: 0.8rem;">post by: {{ post.user.first_name }} 
+                    <br />
+                    {{format_date post.date_created }}
+                    <br />
+                    {{#if post.comments.length }}
+                        <a class="comment-href" href="/api/comments/made/{{ post.id }}">
+                            {{format_commentCount post.comments.length }}
+                        </a>
+                    {{else}}
+                        {{format_commentCount post.comments.length }}
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="pl-4 pb-2 pr-4">{{ post.description }}</div>
+            </div>
+        </div>
+        <h5>Comments:</h5>
+        {{#if post.comments.length}}  
+    {{#each comments as |comment|}}
+        <div class="card border-info mb-3">
+            <div class="card-body">
+                <p class="card-text p-2">{{comment.comment}}</p>
+                
+            <div class="card-footer bg-transparent border-success">
+
+            </div>
+                <div class="p-1" style="font-size: 0.8rem;">
+                    <div style="font-weight: bold">Comment by:
+                        <span> {{comment.user.name}} </span>
+                    </div>                    
+                    <div style="font-weight:bold">Made on:
+                        <span>{{format_date comment.date_created}} </span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+{{/if}}
+
+
+
+        <div class = "card-banner card-rounded">            
+            <div class="col-12">
+                <form class="form" id="new-comment">
+                    <div class="form-group">
+                        <label for="post-comment">Comment</label>
+                        <textarea name="comment" form="new-comment" class="form-input" type="text" id="post-comment"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">+ comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+<script src="/js/comment.js"></script>
