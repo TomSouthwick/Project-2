@@ -14,5 +14,11 @@ module.exports = {
       } else {
         return `<span for="img" aria-label="gear">⚙️</span>`;
       }
+    },
+    format_commentCount: ( count ) => {
+      if (!count) {
+        return `No comments yet`;
+      }
+      return `Comments: ${count}`;
     }
 };

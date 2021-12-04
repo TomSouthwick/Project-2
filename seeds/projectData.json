@@ -1,18 +1,32 @@
 [
   {
+    "id": 1,
     "title": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "user_id": 1,
-    "img_url": "https://cdn.shopify.com/s/files/1/1190/4748/t/10/assets/logo.png?v=5439823434889869121"
+    "description":
+      "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "date_created": "2021-12-02T10:48:27.000Z",
+    "user_id": 2,
+    "img_url":
+      "https://cdn.shopify.com/s/files/1/1190/4748/t/10/assets/logo.png?v=5439823434889869121"
   },
   {
+    "id": 2,
     "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "user_id": 2
+    "description":
+      "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "date_created": "2021-12-02T10:48:27.000Z",
+    "user_id": 1,
+    "img_url":
+      "https://cdn.shopify.com/s/files/1/1190/4748/t/10/assets/logo.png?v=5439823434889869121"
   },
   {
+    "id": 3,
     "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "user_id": 3
+    "description":
+      "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+    "date_created": "2021-12-02T10:48:27.000Z",
+    "user_id": 3,
+    "img_url":
+      "https://cdn.shopify.com/s/files/1/1190/4748/t/10/assets/logo.png?v=5439823434889869121"
   }
 ]
