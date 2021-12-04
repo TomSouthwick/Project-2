@@ -34,7 +34,7 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#project-desc').value.trim();
   
     if (imageUrl && description) {
-      const response = await fetch(`/api/projects`, {
+      const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({ imageUrl, description }),
         headers: {
