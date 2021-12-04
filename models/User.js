@@ -44,14 +44,10 @@ User.init(
     },
     cover_picture: {
       type: DataTypes.STRING,
-    },
-    is_admin: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-    },
+    },  
     description: {
       type: DataTypes.STRING,
-      allowNull: false,
+      
     },
   },
   {
