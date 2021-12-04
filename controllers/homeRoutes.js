@@ -71,8 +71,6 @@ router.get("/profile", async (req, res) => {
 
 router.get('*', (req, res) => {
 try {
-  // Get all projects and JOIN with user data
-  // Pass serialized data and session flag into template
   res.render("login", {
     logged_in: req.session.logged_in,
   });
