@@ -21,7 +21,7 @@ router.get("/newsfeed", async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ["first_name"],
+          attributes: ["first_name", "profile_picture"],
         },
         {
           model: Comment,
