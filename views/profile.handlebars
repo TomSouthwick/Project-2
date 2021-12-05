@@ -1,24 +1,36 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>  
+
+    <header>
+        <div class="topnav">
+            <a href="../../newsfeed">Mirage</a>
+            <form id="searchform" onsubmit="searchFunction(event)">
+                <input id="searchInput" type="text" placeholder="Search...">
+               
+            </form>
+         
+                <a href="../../create-post">Add post</a>
+                <a href="../../profile">{{user.first_name}}</a>
+            
+        </div>
+    </header>
+
+
+
    <div class="limiter">
       <div class="container-login100">
         <div class="wrap-login101">
-          <form class="login100-form validate-form" id="log-in-form"></form>
-          <div class="topnav">
-            <a>Current User TBD{{?current.user.name?}}</a>
-            <input type="text" placeholder="Search...">
-            <a href="newsfeed">Newsfeed</a>
-            
-          </div>
+
           <div class="content-div" id="content-container"> 
+            <h2>{{first_name}} {{last_name}} Profile</h2>
             {{#each posts as |post|}}
               <img style="width: 33%;" src="{{post.img_url}}" alt="">
             {{/each}}
           </div>
+            
+          </div>
+          
           </div>
         </div>
       </div>
     </div>
+
+    

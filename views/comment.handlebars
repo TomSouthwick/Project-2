@@ -1,6 +1,22 @@
 
+    <header>
+        <div class="topnav">
+            <a href="../../newsfeed">Mirage</a>
+            <form id="searchform" onsubmit="searchFunction(event)">
+                <input id="searchInput" type="text" placeholder="Search...">
+               
+            </form>
+         
+                <a href="../../create-post">Add post</a>
+                <a href="../../profile">{{user.first_name}}</a>
+            
+        </div>
+    </header>
 
 
+<div class="limiter">
+      <div class="container-login100">
+<div class="wrap-login101">
         <div class = "card card-rounded">
             <div class="card-header display-flex justify-space-between align-center ">
                 <h4 class="p-2">{{ post.name }}</h4>
@@ -62,6 +78,10 @@
                 </form>
             </div>
         </div>
+        </div>
+        </div>
+        </div>
 
 
 <script src="/js/comment.js"></script>
+<script src="/js/main.js"></script>
