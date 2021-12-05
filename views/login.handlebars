@@ -52,7 +52,7 @@
             <div class="text-center p-t-115">
               <span class="txt1"> Don’t have an account? </span>
 
-              <a class="txt2" href="#" id="sign-up-btn"> Sign Up </a>
+              <a class="txt2" id="sign-up-btn"> Sign Up </a>
             </div>
 			   </form>
           <form class="login100-form validate-form" id="sign-up-form" style="display: none;">
@@ -61,18 +61,18 @@
         class="wrap-input100 validate-input"
         >
         
-            <input class="input100" type="text" name="first_name" />
+            <input id="first-name" class="input100" type="text" name="first_name" />
             <span class="focus-input100" data-placeholder="First Name"></span>
           </div> <div
           class="wrap-input100 validate-input"
         >
-          <input class="input100" type="text" name="last_name" />
+          <input id="last-name" class="input100" type="text" name="last_name" />
           <span class="focus-input100" data-placeholder="Last Name"></span>
         </div> <div
         class="wrap-input100 validate-input"
         data-validate="Valid email is: a@b.c"
 >
-        <input class="input100" type="text" name="email" />
+        <input id="email-signup" class="input100" type="text" name="email" />
         <span class="focus-input100" data-placeholder="Email"></span>
       </div>
 
@@ -83,17 +83,18 @@
         <span class="btn-show-pass">
           <i class="zmdi zmdi-eye"></i>
         </span>
-        <input class="input100" type="password" name="pass" />
+        <input id="password-signup" class="input100" type="password" name="pass" />
         <span class="focus-input100" data-placeholder="Password"></span>
       </div>
         <div class="container-login100-form-btn">
           <div class="wrap-login100-form-btn">
             <div class="login100-form-bgbtn"></div>
-            <button class="login100-form-btn"> Sign Up </button>
+            <button id="singUpBtn" class="login100-form-btn"> Sign Up </button>
           </div>
         </div>
         <div class="text-center p-t-115">
-          <span class="txt1"> Already have an account? </span> <a class="txt2" href="#" id="log-in-btn"> Log In </a></div>
+          <span class="txt1"> Already have an account? </span> <a class="txt2" id="log-in-btn"> Log In </a>
+          <span class="txt1"> Already have an account? </span> <a class="txt2" id="logout"> logout In </a></div>
        
         
       </form>
@@ -119,7 +120,8 @@
     <!--===============================================================================================-->
     <script src="/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================--> --}}
-    {{!-- <script src="/vendor/jquery/jquery-3.2.1.min.js"></script> --}}
-    {{!-- <script src="/js/main.js"></script> --}}
-    <script src="./js/login.js"></script>
+    <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/logout.js"></script>
 

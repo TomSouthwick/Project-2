@@ -42,16 +42,9 @@ User.init(
     profile_picture: {
       type: DataTypes.STRING,
     },
-    cover_picture: {
-      type: DataTypes.STRING,
-    },
-    is_admin: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-    },
     description: {
       type: DataTypes.STRING,
-      allowNull: false,
+      
     },
   },
   {
