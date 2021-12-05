@@ -71,9 +71,35 @@ router.get("/create-post", async (req, res) => {
   res.render('login');
 
 });
-router.get("/update-post", async (req, res) => {
+router.get("/update-post/:id", async (req, res) => {
   if (req.session.logged_in) {
-    res.render('update-post');
+    try {
+      // Get all projects and JOIN with user data
+      const postData = await Post.findOne({
+        include: [
+          {
+            model: User,
+            attributes: ["first_name"],
+          }
+        ],
+        where: {
+          id: req.params.id,
+          user_id: req.session.user_id
+        }
+      });
+  
+      // Serialize data so the template can read it
+      const post =  postData.get({ plain: true });
+      console.log(post);
+  
+      // Pass serialized data and session flag into template
+      res.render('update-post', {
+        post,
+        logged_in: req.session.logged_in,
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
     return;
   }
 
