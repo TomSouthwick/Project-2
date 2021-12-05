@@ -1,25 +1,26 @@
-        <div>
+<div class="d-flex flex-column flex-nowrap  p-4">
+  <div class="justify-content-center">
 
-        <form id="imageForm">
-            <input id="imageInput" type="file" accept="image/*">
-            <button type="submit" class="btn btn-primary">Upload</button>
-        </form>
-<div class="col-md-6">
-    <h3>Create a Post:</h3>
+  <form id="imageForm">
+    <input id="imageInput" type="file" accept="image/*">
+    <button type="submit" class="btn btn-primary">Upload</button>
+  </form>
+  <div class="col-md-6">
+      <h3>Create a Post:</h3>
 
-    <form class="form new-project-form">
-        <div id="images">
+      <form class="form new-project-form">
+          <div id="images">
 
+          </div>
+        <div class="form-group">
+          <label for="project-desc">description:</label>
+          <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
         </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+      </form>
   </div>
-
-  <script src="/js/post.js"></script>
-        </div>
+  </div>  
+</div>
+<script src="/js/post.js"></script>

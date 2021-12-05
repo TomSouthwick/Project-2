@@ -1,7 +1,8 @@
+
 const imageForm = document.getElementById("imageForm")
 const imageInput = document.querySelector("#imageInput")
 const imageGo = document.getElementById("images");
-var imageUrl;
+var img_url;
 
 imageForm.addEventListener("submit", async event => {
   event.preventDefault()
@@ -19,12 +20,12 @@ imageForm.addEventListener("submit", async event => {
     body: file
   })
 
-  imageUrl = url.split('?')[0]
+  img_url = url.split('?')[0]
 
   // post requst to my server to store any extra data  
   
   const img = document.createElement("img")
-  img.src = imageUrl
+  img.src = img_url
   imageGo.appendChild(img)
 });
 
@@ -33,10 +34,10 @@ const newFormHandler = async (event) => {
   
     const description = document.querySelector('#project-desc').value.trim();
   
-    if (imageUrl && description) {
+    if (img_url && description) {
       const response = await fetch(`/api/posts`, {
         method: 'POST',
-        body: JSON.stringify({ imageUrl, description }),
+        body: JSON.stringify({ img_url, description }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -51,4 +52,4 @@ const newFormHandler = async (event) => {
 };
 document
   .querySelector('.new-project-form')
-  .addEventListener('submit', newFormHandler);
+  .addEventListener('click', newFormHandler);
