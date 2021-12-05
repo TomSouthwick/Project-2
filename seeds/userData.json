@@ -4,7 +4,7 @@
       "last_name": "Zuck",
       "email": "zuck@facebook.com",
       "password": "password12345",
-      "profile_picture":null,
+      "profile_picture":"https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/12/28/Pictures/_e4803794-297d-11ea-822c-9a9bb451da23.png",
       "cover_picture":null,
       "is_admin":true,
       "description":"I am the admin"
@@ -14,7 +14,7 @@
       "last_name": "Ink",
       "email": "ben@facebook.com",
       "password": "password12345",
-      "profile_picture":null,
+      "profile_picture":"https://hips.hearstapps.com/elleuk.cdnds.net/15/37/2048x2730/2048x2730-9e7ae4-assets-elleuk-com-gallery-25194-ben-stiller-in-a-scene-from-the-film-zoolander-2011-getty-jpg.jpg?resize=980:*",
       "cover_picture":null,
       "is_admin":false,
       "description":"I am the boss"
@@ -24,7 +24,7 @@
       "last_name": "Gates",
       "email": "bill@facebook.com",
       "password": "password12345",
-      "profile_picture":null,
+      "profile_picture":"https://th-thumbnailer.cdn-si-edu.com/Ydr4KOSfim0eLCGVMZ8fx8wcxR4=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/35_gates.jpg",
       "cover_picture":null,
       "is_admin":false,
       "description":"I need a job"
