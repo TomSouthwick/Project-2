@@ -71,5 +71,14 @@ router.get("/create-post", async (req, res) => {
   res.render('login');
 
 });
+router.get("/update-post", async (req, res) => {
+  if (req.session.logged_in) {
+    res.render('update-post');
+    return;
+  }
+
+  res.render('login');
+
+});
 
 module.exports = router;
