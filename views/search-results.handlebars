@@ -1,4 +1,5 @@
 
+
     <header>
         <div class="topnav">
             <a href="../../newsfeed">Mirage</a>
@@ -22,19 +23,9 @@
           
 
           <div class="content-div" id="content-container"> 
-            {{#each posts as |post|}}
-              <h5 style="margin-top: 20px;">{{post.user.first_name}}</h5>
-              <img src="{{post.img_url}}" alt="">
-              <h1 style="margin-bottom: 30px;"><a href="/project/{{post.id}}">{{post.description}} on {{format_date post.date_created}}</a></h1>
-              <div>
-                {{#if post.comments.length }}
-                            <a class="comment-href" href="/api/comments/{{ post.id }}">
-                                {{format_commentCount post.comments.length }}
-                            </a>
-                        {{else}}
-                            {{format_commentCount post.comments.length }}
-                        {{/if}}
-              </div>
+            {{#each results as |result|}}
+              <h5 style="margin-top: 20px;">
+                  <a href="/profile/{{result.dataValues.id}}">{{result.dataValues.first_name}} {{result.dataValues.last_name}}</h5></a>
             {{/each}}
           </div>
           </div>
