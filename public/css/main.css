@@ -539,6 +539,11 @@ iframe {
 .wrap-login100-form-btn:hover .login100-form-bgbtn {
   left: 0;
 }
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  }
 
 /*------------------------------------------------------------------
 [ Responsive ]*/

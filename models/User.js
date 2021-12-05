@@ -42,9 +42,6 @@ User.init(
     profile_picture: {
       type: DataTypes.STRING,
     },
-    cover_picture: {
-      type: DataTypes.STRING,
-    },  
     description: {
       type: DataTypes.STRING,
       

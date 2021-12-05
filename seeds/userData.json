@@ -5,8 +5,6 @@
       "email": "zuck@facebook.com",
       "password": "password12345",
       "profile_picture":null,
-      "cover_picture":null,
-      "is_admin":true,
       "description":"I am the admin"
     },
     {
@@ -16,7 +14,6 @@
       "password": "password12345",
       "profile_picture":null,
       "cover_picture":null,
-      "is_admin":false,
       "description":"I am the boss"
     },
     {
@@ -25,8 +22,6 @@
       "email": "bill@facebook.com",
       "password": "password12345",
       "profile_picture":null,
-      "cover_picture":null,
-      "is_admin":false,
       "description":"I need a job"
     }
 ]

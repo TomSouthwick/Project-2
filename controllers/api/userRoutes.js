@@ -13,7 +13,7 @@ const { User } = require("../../models");
 // create a middleware
 router.post("/", async (req, res) => {
   try {
-    const userData = await User.create({ ...req.body, is_admin: false });
+    const userData = await User.create({ ...req.body });
 
     req.session.save(() => {
       req.session.user_id = userData.id;
