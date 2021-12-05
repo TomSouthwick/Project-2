@@ -14,14 +14,14 @@ router.get("/login", async (req, res) => {
   }
 });
 
-router.get("/", async (req, res) => {
+router.get("/newsfeed", async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const projectData = await Post.findAll({
       include: [
         {
           model: User,
-          attributes: ["first_name"],
+          attributes: ["first_name", "profile_picture"],
         },
         {
           model: Comment
