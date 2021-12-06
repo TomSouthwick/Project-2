@@ -22,9 +22,9 @@
           <div class="content-div" id="content-container"> 
             {{#each posts as |post|}}
               <h5 style="margin-top: 20px;">
-                <img class=thumbnail src="{{post.user.profile_picture}}" alt="">
+                <img  class=thumbnail src="{{post.user.profile_picture}}" alt="">
               {{post.user.first_name}}</h5>
-              <img src="{{post.img_url}}" alt="">
+              <img style="padding: 25px; height: 400; width: 400;" src="{{post.img_url}}" alt="">
               <h1 style="margin-bottom: 30px;"><a href="/api/comments/{{post.id}}">{{post.description}} on {{format_date post.date_created}}</a></h1>
               <div>
                 {{#if post.comments.length }}

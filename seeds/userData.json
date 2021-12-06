@@ -1,31 +1,71 @@
 [
-    {
-      "first_name": "Mark",
-      "last_name": "Zuck",
-      "email": "zuck@facebook.com",
-      "password": "password12345",
-      "profile_picture":"https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/12/28/Pictures/_e4803794-297d-11ea-822c-9a9bb451da23.png",
-      "cover_picture":null,
-      "is_admin":true,
-      "description":"I am the admin"
-    },
-    {
-      "first_name": "Ben",
-      "last_name": "Ink",
-      "email": "ben@facebook.com",
-      "password": "password12345",
-      "profile_picture":"https://hips.hearstapps.com/elleuk.cdnds.net/15/37/2048x2730/2048x2730-9e7ae4-assets-elleuk-com-gallery-25194-ben-stiller-in-a-scene-from-the-film-zoolander-2011-getty-jpg.jpg?resize=980:*",
-      "cover_picture":null,
-      "description":"I am the boss"
-    },
-    {
-      "first_name": "Bill",
-      "last_name": "Gates",
-      "email": "bill@facebook.com",
-      "password": "password12345",
-      "profile_picture":"https://th-thumbnailer.cdn-si-edu.com/Ydr4KOSfim0eLCGVMZ8fx8wcxR4=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/35_gates.jpg",
-      "cover_picture":null,
-      "is_admin":false,
-      "description":"I need a job"
-    }
+  {
+    "first_name": "Mark",
+    "last_name": "Zuck",
+    "email": "zuck@facebook.com",
+    "password": "password12345",
+    "profile_picture": "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/12/28/Pictures/_e4803794-297d-11ea-822c-9a9bb451da23.png",
+    "cover_picture": null,
+    "is_admin": true,
+    "description": "I am the admin"
+  },
+  {
+    "first_name": "Ben",
+    "last_name": "Ink",
+    "email": "ben@facebook.com",
+    "password": "password12345",
+    "profile_picture": "https://hips.hearstapps.com/elleuk.cdnds.net/15/37/2048x2730/2048x2730-9e7ae4-assets-elleuk-com-gallery-25194-ben-stiller-in-a-scene-from-the-film-zoolander-2011-getty-jpg.jpg?resize=980:*",
+    "cover_picture": null,
+    "description": "I am the boss"
+  },
+  {
+    "first_name": "Bill",
+    "last_name": "Gates",
+    "email": "bill@facebook.com",
+    "password": "password12345",
+    "profile_picture": "https://th-thumbnailer.cdn-si-edu.com/Ydr4KOSfim0eLCGVMZ8fx8wcxR4=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/35_gates.jpg",
+    "cover_picture": null,
+    "is_admin": false,
+    "description": "I need a job"
+  },
+  {
+    "first_name": "Tom",
+    "last_name": "Southwick",
+    "email": "Tom@facebook.com",
+    "password": "password12345",
+    "profile_picture": "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/12/28/Pictures/_e4803794-297d-11ea-822c-9a9bb451da23.png",
+    "cover_picture": null,
+    "is_admin": true,
+    "description": "I am the admin"
+  },
+  {
+    "first_name": "Luke",
+    "last_name": "McMillan",
+    "email": "luke@facebook.com",
+    "password": "password12345",
+    "profile_picture": "https://cdn.pixabay.com/photo/2021/11/27/12/16/mountain-6827881_1280.jpg",
+    "cover_picture": null,
+    "is_admin": true,
+    "description": "I am the admin"
+  },
+  {
+    "first_name": "Ygor",
+    "last_name": "Oliveira do Carmo",
+    "email": "ygor@facebook.com",
+    "password": "password12345",
+    "profile_picture": "https://cdn.pixabay.com/photo/2021/11/04/06/15/woman-6767494_1280.jpg",
+    "cover_picture": null,
+    "is_admin": true,
+    "description": "Image res"
+  },
+  {
+    "first_name": "Steve",
+    "last_name": "Jobs",
+    "email": "Steve@apple.com",
+    "password": "password12345",
+    "profile_picture": "https://cdn.pixabay.com/photo/2017/08/02/23/58/people-2574170_1280.jpg",
+    "cover_picture": null,
+    "is_admin": true,
+    "description": "Child"
+  }
 ]
