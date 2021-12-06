@@ -24,7 +24,7 @@
             <h2>{{first_name}} {{last_name}} Profile</h2>
             {{#each posts as |post|}}
             <div class="card" style="width: 30rem;">
-              <img class="card-img-top" src="{{post.img_url}}" alt="Card image cap">
+              <img style="padding: 25px; height: 400; width: 400;" class="card-img-top" src="{{post.img_url}}" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">{{post.description}}</p>
                 <button data-id="{{post.id}}" id="delete-btn" class="btn btn-danger">Delete</button>
