@@ -25,7 +25,7 @@
                 <img class=thumbnail src="{{post.user.profile_picture}}" alt="">
               {{post.user.first_name}}</h5>
               <img src="{{post.img_url}}" alt="">
-              <h1 style="margin-bottom: 30px;"><a href="/project/{{post.id}}">{{post.description}} on {{format_date post.date_created}}</a></h1>
+              <h1 style="margin-bottom: 30px;"><a href="/api/comments/{{post.id}}">{{post.description}} on {{format_date post.date_created}}</a></h1>
               <div>
                 {{#if post.comments.length }}
                             <a class="comment-href" href="/api/comments/{{ post.id }}">
