@@ -23,7 +23,14 @@
           <div class="content-div" id="content-container"> 
             <h2>{{first_name}} {{last_name}} Profile</h2>
             {{#each posts as |post|}}
-              <img style="width: 33%;" src="{{post.img_url}}" alt="">
+            <div class="card" style="width: 30rem;">
+              <img class="card-img-top" src="{{post.img_url}}" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">{{post.description}}</p>
+                <button data-id="{{post.id}}" id="delete-btn" class="btn btn-danger">Delete</button>
+                <a href="/update-post/{{post.id}}" class="btn btn-primary">Edit</a>
+              </div>
+            </div>
             {{/each}}
           </div>
             
@@ -33,5 +40,5 @@
         </div>
       </div>
     </div>
-
+<script src="/js/profile.js"></script>
     
