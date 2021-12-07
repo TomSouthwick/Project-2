@@ -27,8 +27,10 @@
               <img style="padding: 25px; height: 400; width: 400;" class="card-img-top" src="{{post.img_url}}" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">{{post.description}}</p>
-                <button data-id="{{post.id}}" id="delete-btn" class="btn btn-danger">Delete</button>
-                <a href="/update-post/{{post.id}}" class="btn btn-primary">Edit</a>
+                {{#if ../isCurrentUser}}
+                  <a href="/update-post/{{post.id}}" class="btn btn-primary">Edit</a>
+                  <button data-id="{{post.id}}" id="delete-btn" class="btn btn-danger">Delete</button>
+                {{/if}}
               </div>
             </div>
             {{/each}}

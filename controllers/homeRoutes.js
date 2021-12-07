@@ -62,6 +62,7 @@ router.get("/profile", withAuth, async (req, res) => {
     const user = userData.get({ plain: true });
 
     res.render("profile", {
+      isCurrentUser: true,
       ...user,
       logged_in: true,
     });
@@ -81,8 +82,12 @@ router.get("/profile/:id", withAuth, async (req, res) => {
     });
     //
     const user = userData.get({ plain: true });
-
-    res.render("profile", {
+    
+    console.log(req.session.user_id);
+    console.log(req.params.id);
+    res.render("profile", {      
+      // is id == post.user_id
+      isCurrentUser: req.session.user_id == req.params.id,
       ...user,
       logged_in: true,
     });
@@ -90,6 +95,7 @@ router.get("/profile/:id", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 
 router.get("/create-post", async (req, res) => {
   if (req.session.logged_in) {
